@@ -1,11 +1,11 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import { useCounter } from '../hooks';
-import {Small} from './Small';
+import { Small } from './Small';
 
 export const Memorize = () => {
   const { counter, increase } = useCounter( 1 );
 
-  const [ show, setShow ] = useState( true )
+  const [ show, setShow ] = useState( true );
 
   return (
     <>
