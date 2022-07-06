@@ -4,6 +4,7 @@ export const FormWithCustomHook = () => {
 
   const {
     onInputChange,
+    onResetForm,
     username,
     email,
     password 
@@ -45,6 +46,13 @@ export const FormWithCustomHook = () => {
         value={ password }
         onChange={ onInputChange }
       /> 
+
+      <button
+        onClick={ onResetForm }
+        className='btn btn-primary m-2'
+      >
+        Borrar
+      </button>
     </>
   )
 }
