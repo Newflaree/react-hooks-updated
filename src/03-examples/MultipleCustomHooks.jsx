@@ -31,7 +31,6 @@ export const MultipleCustomHook = () => {
       >
         Next quote
       </button>
-
     </>
   );
 }
