@@ -4,7 +4,7 @@ export const ShowIncrement = ({ increase }) => {
     <button
       className="btn btn-primary"
       onClick={ () => {
-        increase();
+        increase( 5 );
       }}
     >
       Increment
