@@ -5,8 +5,6 @@ import { HomePage, AboutPage, LoginPage, Navbar } from './';
 export const MainApp = () => {
   return (
     <>
-      <h1>Main App</h1>
-
       <Navbar />
       <hr />
       
