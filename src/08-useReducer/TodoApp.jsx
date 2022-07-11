@@ -4,7 +4,7 @@ import { TodoAdd, TodoList } from './';
 // Reducer
 import { todoReducer } from './todoReducer';
 
-const initializerArg = [
+const initialState = [
   {
     id: new Date().getTime(),
     description: 'Recolectar piedra del alma',
@@ -24,12 +24,16 @@ const initializerArg = [
 
 
 export const TodoApp = () => {
+  const [ todos, dispatch  ] = useReducer( todoReducer, initialState);
 
   const handleNewTodo = ( todo ) => {
-    console.log({ todo });
-  }
+    const action = {
+      type: '[TODO] Add Todo',
+      payload: todo
+    }
 
-  const [ todos, dispatch  ] = useReducer( todoReducer, initializerArg );
+    dispatch( action );
+  }
 
   return (
     <>

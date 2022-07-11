@@ -16,7 +16,7 @@ export const TodoAdd = ({ onNewTodo }) => {
       description
     }
 
-    onNewTodo && onNewTodo( newTodo );
+    onNewTodo( newTodo );
     onResetForm();
   }
 
@@ -34,7 +34,6 @@ export const TodoAdd = ({ onNewTodo }) => {
       <button
         type='submit'
         className='btn btn-outline-primary mx-2'
-        onClick={ onNewTodo }
       >
         Add
       </button>
