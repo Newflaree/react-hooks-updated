@@ -1,9 +1,11 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
+// Context
+import { UserProvider } from './context';
 // Pages
 import { HomePage, AboutPage, LoginPage, Navbar } from './';
-import { UserProvider } from './context/userProvider';
 
 export const MainApp = () => {
+
   return (
     <UserProvider>
       <Navbar />
