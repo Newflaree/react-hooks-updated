@@ -1,0 +1,9 @@
+import { UserContext } from './userContext';
+
+export const UserProvider = ({ children }) => {
+  return (
+    <UserContext.Provider value={{ hola: 'Mundo' }}>
+      { children }
+    </UserContext.Provider>
+  );
+}
